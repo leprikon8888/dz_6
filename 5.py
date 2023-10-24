@@ -7,8 +7,10 @@ for item in string.punctuation:
     if item in txt:
         txt = txt.replace(item, " ")
 txt = txt.split()
-res = []
-for i in txt:
-    if len(i) > len(res):
-        res = i
+res = max(txt, key=len)
 print(res)
+# res = []
+# for i in txt:
+#     if len(i) > len(res):
+#         res = i
+
